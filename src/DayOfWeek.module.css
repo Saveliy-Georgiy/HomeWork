@@ -1,0 +1,28 @@
+.days {
+    margin-top: 50px;
+    margin-left: 5px;
+    padding: 5px;
+    border: 1px solid black;
+    width: 82px;
+}
+
+.colorMonday {
+    color: green;
+}
+
+.colorTuesday {
+    color: yellow;
+}
+
+.colorWednesday {
+    color: red;
+}
+
+.colorThursday {
+    color: blueviolet;
+}
+
+.colorFriday {
+    color: blue;
+}
+

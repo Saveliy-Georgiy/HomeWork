@@ -1,26 +1,43 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import DayOfWeek from "./DayOfWeek";
+import PersonalQualities from "./PersonalQualities";
+import HomeWork3 from "./HW3/HomeWork3.jsx"
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends React.Component {
+
+    days = [
+        {number: 1, day: "Monday"},
+        {number: 2, day: "Tuesday"},
+        {number: 3, day: "Wednesday"},
+        {number: 4, day: "Thursday"},
+        {number: 5, day: "Friday"},
+    ];
+
+   qualities = [
+        {quality: "Капитан"},
+        {quality: "Джек"},
+        {quality: "Воробей"},
+    ];
+    render = () => {
+        return (
+            <div className="App">
+                <div className="Gradient">
+                    Бирюков Савелий-Георгий Юрьевич
+                </div>
+                <div>
+                    <DayOfWeek day="Tuesday" />
+                </div>
+                <div>
+                    <PersonalQualities qualities={this.qualities} />
+                </div>
+                <div>
+                    <HomeWork3 />
+                </div>
+            </div>
+        );
+    }
 }
 
 export default App;
+
